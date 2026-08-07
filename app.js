@@ -1,218 +1,218 @@
-// function getEvenNumbers(arr) {
-//     return arr.filter(num => num % 2 === 0);
-// }
+function getEvenNumbers(arr) {
+    return arr.filter(num => num % 2 === 0);
+}
 
-// console.log(getEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(getEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-// function getGreaterThan50(arr) {
-//     return arr.filter(num => num > 50);
-// }
+function getGreaterThan50(arr) {
+    return arr.filter(num => num > 50);
+}
 
-// console.log(getGreaterThan50([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]));
+console.log(getGreaterThan50([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]));
 
-// function getOddNumbers(arr) {
-//     return arr.filter(num => num % 2 !== 0);
+function getOddNumbers(arr) {
+    return arr.filter(num => num % 2 !== 0);
 
-// }
+}
 
-// console.log(getOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(getOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-// function getPositiveNumbers(arr) {
-//     return arr.filter(num => num > 0)
-// }
+function getPositiveNumbers(arr) {
+    return arr.filter(num => num > 0)
+}
 
-// console.log(getPositiveNumbers([-1, -2, -3, -4, -5, 1, 2, 3, 4, 5]))
+console.log(getPositiveNumbers([-1, -2, -3, -4, -5, 1, 2, 3, 4, 5]))
 
-// function longNamesFruits(arr) {
-//     return arr.filter(fruit => fruit.length > 5)
-// }
+function longNamesFruits(arr) {
+    return arr.filter(fruit => fruit.length > 5)
+}
 
-// console.log(longNamesFruits(["Apple", "Banana", "Kiwi", "Mango"]));
+console.log(longNamesFruits(["Apple", "Banana", "Kiwi", "Mango"]));
 
 
-// function findTheLargestNumber(arr) {
-//     return Math.max(...arr)
-// }
+function findTheLargestNumber(arr) {
+    return Math.max(...arr)
+}
 
-// console.log(findTheLargestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(findTheLargestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-// function name(callback) {
-//     console.log("Sujith K");
-//     callback()
-// }
+function name(callback) {
+    console.log("Sujith K");
+    callback()
+}
 
-// function place(callback) {
-//     console.log("Malappuram");
-//     callback()
-// }
+function place(callback) {
+    console.log("Malappuram");
+    callback()
+}
 
-// function age() {
-//     console.log(25);
-// }
+function age() {
+    console.log(25);
+}
 
-// name(()=>{
-//     place(()=>{
-//         age()
-//     })
-// })
+name(()=>{
+    place(()=>{
+        age()
+    })
+})
 
-// function name() {
-//     return new Promise((resolve)=>{
-//         console.log("Sujith K");
-//         resolve()
-//     })
-// }
+function name() {
+    return new Promise((resolve)=>{
+        console.log("Sujith K");
+        resolve()
+    })
+}
 
-// function place() {
-//     return new Promise((resolve) => {
-//         console.log("Malappuram");
-//         resolve();
-//     });
-// }
+function place() {
+    return new Promise((resolve) => {
+        console.log("Malappuram");
+        resolve();
+    });
+}
 
-// function age() {
-//     return new Promise((resolve) => {
-//         console.log(25);
-//         resolve();
-//     });
-// }
+function age() {
+    return new Promise((resolve) => {
+        console.log(25);
+        resolve();
+    });
+}
 
-// name()
-//     .then(() => place())
-//     .then(() => age())
-//     .then(() => console.log("Finished"));
+name()
+    .then(() => place())
+    .then(() => age())
+    .then(() => console.log("Finished"));
 
-// function walkDog(callback) {
-//     setTimeout(() => {
-//         console.log("You walk the dog");
-//         callback();
-//     }, 1500);
-// }
+function walkDog(callback) {
+    setTimeout(() => {
+        console.log("You walk the dog");
+        callback();
+    }, 1500);
+}
 
-// function cleanKitchen(callback) {
-//     setTimeout(() => {
-//         console.log("You clean the kitchen");
-//         callback();
-//     }, 2500);
-// }
+function cleanKitchen(callback) {
+    setTimeout(() => {
+        console.log("You clean the kitchen");
+        callback();
+    }, 2500);
+}
 
-// function takeOutTrash(callback) {
-//     setTimeout(() => {
-//         console.log("You take out the trash");
-//         callback();
-//     }, 500);
-// }
+function takeOutTrash(callback) {
+    setTimeout(() => {
+        console.log("You take out the trash");
+        callback();
+    }, 500);
+}
 
-// walkDog(() => {
-//     cleanKitchen(() => {
-//         takeOutTrash(() => {
-//             console.log("You finished all the chores!");
-//         });
-//     });
-// });
+walkDog(() => {
+    cleanKitchen(() => {
+        takeOutTrash(() => {
+            console.log("You finished all the chores!");
+        });
+    });
+});
 
-// function walkDog() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
+function walkDog() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
 
-//             const dogWalked = false;
+            const dogWalked = false;
 
-//             if (dogWalked) {
-//                 resolve("You walk the dog");
-//             } else {
-//                 reject("You didn't walk the dog")
-//             }
+            if (dogWalked) {
+                resolve("You walk the dog");
+            } else {
+                reject("You didn't walk the dog")
+            }
 
-//         }, 1500);
-//     });
-// }
+        }, 1500);
+    });
+}
 
-// function cleanKitchen() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
+function cleanKitchen() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
 
-//             const kitchenCleaned = true;
+            const kitchenCleaned = true;
 
-//             if (kitchenCleaned) {
-//                 resolve("You clean the kitchen");
-//             } else {
-//                 reject("You didn't clean the kitchen")
-//             }
+            if (kitchenCleaned) {
+                resolve("You clean the kitchen");
+            } else {
+                reject("You didn't clean the kitchen")
+            }
 
-//         }, 2500);
-//     });
-// }
+        }, 2500);
+    });
+}
 
-// function takeOutTrash() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
+function takeOutTrash() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
 
-//             const trashTakenOut = true;
+            const trashTakenOut = true;
 
-//             if (trashTakenOut) {
-//                 resolve("You take out the trash");
-//             } else {
-//                 reject("You didn't take out the trash")
-//             }
+            if (trashTakenOut) {
+                resolve("You take out the trash");
+            } else {
+                reject("You didn't take out the trash")
+            }
 
-//         }, 500);
-//     });
-// }
+        }, 500);
+    });
+}
 
-// walkDog()
-//     .then(value => {
-//         console.log(value);
-//         return cleanKitchen();
-//     })
-//     .then(value => {
-//         console.log(value);
-//         return takeOutTrash();
-//     })
-//     .then(value => {
-//         console.log(value);
-//         console.log("You finished all the chores!");
-//     })
-//     .catch(error => console.error("Failed to complete the task:", error));
+walkDog()
+    .then(value => {
+        console.log(value);
+        return cleanKitchen();
+    })
+    .then(value => {
+        console.log(value);
+        return takeOutTrash();
+    })
+    .then(value => {
+        console.log(value);
+        console.log("You finished all the chores!");
+    })
+    .catch(error => console.error("Failed to complete the task:", error));
 
-// function greet(name, callback) {
-//     console.log("Hello " + name)
-//     callback()
-// }
+function greet(name, callback) {
+    console.log("Hello " + name)
+    callback()
+}
 
-// greet("Sujith K", () => {
-//     console.log("Welcome!");
-// })
+greet("Sujith K", () => {
+    console.log("Welcome!");
+})
 
-// function greet(name, resolve) {
-//     return new Promise((resolve, reject) => {
-//         console.log("Hello " + name);
-//         resolve()
-//     })
-// }
+function greet(name, resolve) {
+    return new Promise((resolve, reject) => {
+        console.log("Hello " + name);
+        resolve()
+    })
+}
 
-// greet("Sujith K")
-//     .then(() => {
-//         console.log("Welcome");
+greet("Sujith K")
+    .then(() => {
+        console.log("Welcome");
 
-//     }).catch((error) => {
-//         console.error("Error:", error);
-//     });
+    }).catch((error) => {
+        console.error("Error:", error);
+    });
 
-// function walkDog() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             console.log("You walk the dog");
-//             resolve()
-//         }, 2500);
-//     })
-// }
+function walkDog() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("You walk the dog");
+            resolve()
+        }, 2500);
+    })
+}
 
-// async function start() {
-//     await walkDog();
-//     console.log("Finished")
-// }
+async function start() {
+    await walkDog();
+    console.log("Finished")
+}
 
-// start()
+start()
 
 function downloadFile() {
     return new Promise((resolve, reject) => {
@@ -226,6 +226,165 @@ function downloadFile() {
 async function start() {
     await downloadFile();
     console.log("Open the file");
+}
+
+start()
+
+function walkDog() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let success = false;
+
+            if (success) {
+                resolve("You walked the dog")
+            } else {
+                reject("You didn't walk the dog")
+            }
+        }, 1500);
+    })
+}
+
+async function start() {
+    try {
+        let result = await walkDog()
+        console.log(result)
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+start()
+
+function makeCoffe() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let coffeeAvailable = true;
+
+            if (coffeeAvailable) {
+                resolve("Coffee is available")
+            } else {
+                reject("No coffee available")
+            }
+        }, 2500);
+    })
+}
+
+async function start() {
+    try {
+        let result = await makeCoffe()
+        console.log(result)
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+start();
+
+function login(username, password) {
+    return new Promise((resolve, reject) => {
+        if (username === "Sujith K" && password === "12345") {
+            resolve("Login Successfull")
+        } else {
+            reject("Invalid username or password")
+        }
+    })
+}
+
+async function start(params) {
+    try {
+        let result = await login("Ajith", "12345")
+        console.log(result);
+    } catch (error) {
+        console.error("Error:", error);
+
+    }
+}
+
+start()
+
+function checkAge(age) {
+    return new Promise((resolve, reject) => {
+        if (age >= 18) {
+            resolve("You are eligible")
+        } else {
+            reject("You are not eligible")
+        }
+    })
+}
+
+async function start() {
+    try {
+        let result = await checkAge(25)
+        console.log(result);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+start()
+
+function makePayment(amount) {
+    return new Promise((resolve, reject) => {
+        if (amount > 0) {
+            resolve("Payment successful");
+        } else {
+            reject("Payment failed");
+        }
+    })
+}
+
+async function start() {
+    try {
+        let result = await makePayment(0)
+        console.log(result);
+    } catch (error) {
+        console.error("Error:", error);
+
+    }
+}
+
+start()
+
+function checkInternet() {
+    return new Promise((resolve, reject) => {
+        let connected = true;
+
+        if (connected) {
+            resolve("Internet Connected")
+        } else {
+            reject("Internet not Connected")
+        }
+    })
+}
+
+async function start(params) {
+    try {
+        let result = await checkInternet()
+        console.log(result);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+start()
+
+function checkProduct(product) {
+    return new Promise((resolve, reject) => {
+        if (product === "Laptop") {
+            resolve("Laptop is available")
+        } else {
+            reject("Laptop is not available")
+        }
+    })
+}
+
+async function start() {
+    try {
+        let result = await checkProduct("Laptop")
+        console.log(result);
+    } catch (error) {
+        console.error("Error :", error);
+    }
 }
 
 start()
