@@ -1,0 +1,231 @@
+// function getEvenNumbers(arr) {
+//     return arr.filter(num => num % 2 === 0);
+// }
+
+// console.log(getEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// function getGreaterThan50(arr) {
+//     return arr.filter(num => num > 50);
+// }
+
+// console.log(getGreaterThan50([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]));
+
+// function getOddNumbers(arr) {
+//     return arr.filter(num => num % 2 !== 0);
+
+// }
+
+// console.log(getOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// function getPositiveNumbers(arr) {
+//     return arr.filter(num => num > 0)
+// }
+
+// console.log(getPositiveNumbers([-1, -2, -3, -4, -5, 1, 2, 3, 4, 5]))
+
+// function longNamesFruits(arr) {
+//     return arr.filter(fruit => fruit.length > 5)
+// }
+
+// console.log(longNamesFruits(["Apple", "Banana", "Kiwi", "Mango"]));
+
+
+// function findTheLargestNumber(arr) {
+//     return Math.max(...arr)
+// }
+
+// console.log(findTheLargestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// function name(callback) {
+//     console.log("Sujith K");
+//     callback()
+// }
+
+// function place(callback) {
+//     console.log("Malappuram");
+//     callback()
+// }
+
+// function age() {
+//     console.log(25);
+// }
+
+// name(()=>{
+//     place(()=>{
+//         age()
+//     })
+// })
+
+// function name() {
+//     return new Promise((resolve)=>{
+//         console.log("Sujith K");
+//         resolve()
+//     })
+// }
+
+// function place() {
+//     return new Promise((resolve) => {
+//         console.log("Malappuram");
+//         resolve();
+//     });
+// }
+
+// function age() {
+//     return new Promise((resolve) => {
+//         console.log(25);
+//         resolve();
+//     });
+// }
+
+// name()
+//     .then(() => place())
+//     .then(() => age())
+//     .then(() => console.log("Finished"));
+
+// function walkDog(callback) {
+//     setTimeout(() => {
+//         console.log("You walk the dog");
+//         callback();
+//     }, 1500);
+// }
+
+// function cleanKitchen(callback) {
+//     setTimeout(() => {
+//         console.log("You clean the kitchen");
+//         callback();
+//     }, 2500);
+// }
+
+// function takeOutTrash(callback) {
+//     setTimeout(() => {
+//         console.log("You take out the trash");
+//         callback();
+//     }, 500);
+// }
+
+// walkDog(() => {
+//     cleanKitchen(() => {
+//         takeOutTrash(() => {
+//             console.log("You finished all the chores!");
+//         });
+//     });
+// });
+
+// function walkDog() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+
+//             const dogWalked = false;
+
+//             if (dogWalked) {
+//                 resolve("You walk the dog");
+//             } else {
+//                 reject("You didn't walk the dog")
+//             }
+
+//         }, 1500);
+//     });
+// }
+
+// function cleanKitchen() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+
+//             const kitchenCleaned = true;
+
+//             if (kitchenCleaned) {
+//                 resolve("You clean the kitchen");
+//             } else {
+//                 reject("You didn't clean the kitchen")
+//             }
+
+//         }, 2500);
+//     });
+// }
+
+// function takeOutTrash() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+
+//             const trashTakenOut = true;
+
+//             if (trashTakenOut) {
+//                 resolve("You take out the trash");
+//             } else {
+//                 reject("You didn't take out the trash")
+//             }
+
+//         }, 500);
+//     });
+// }
+
+// walkDog()
+//     .then(value => {
+//         console.log(value);
+//         return cleanKitchen();
+//     })
+//     .then(value => {
+//         console.log(value);
+//         return takeOutTrash();
+//     })
+//     .then(value => {
+//         console.log(value);
+//         console.log("You finished all the chores!");
+//     })
+//     .catch(error => console.error("Failed to complete the task:", error));
+
+// function greet(name, callback) {
+//     console.log("Hello " + name)
+//     callback()
+// }
+
+// greet("Sujith K", () => {
+//     console.log("Welcome!");
+// })
+
+// function greet(name, resolve) {
+//     return new Promise((resolve, reject) => {
+//         console.log("Hello " + name);
+//         resolve()
+//     })
+// }
+
+// greet("Sujith K")
+//     .then(() => {
+//         console.log("Welcome");
+
+//     }).catch((error) => {
+//         console.error("Error:", error);
+//     });
+
+// function walkDog() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("You walk the dog");
+//             resolve()
+//         }, 2500);
+//     })
+// }
+
+// async function start() {
+//     await walkDog();
+//     console.log("Finished")
+// }
+
+// start()
+
+function downloadFile() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("File downloaded");
+            resolve()
+        }, 2000);
+    })
+}
+
+async function start() {
+    await downloadFile();
+    console.log("Open the file");
+}
+
+start()
