@@ -526,15 +526,30 @@
 //     })
 // })
 
-const buttons = document.querySelectorAll(".watch");
+// const buttons = document.querySelectorAll(".watch");
+
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", function () {
+
+//         const movie = button.parentElement;
+//         const title = movie.querySelector("h2")
+
+//         console.log("Playing: " + title.textContent);
+//     })
+// })
+
+const buttons = document.querySelectorAll(".buy");
 
 buttons.forEach(function (button) {
+
     button.addEventListener("click", function () {
 
-        const movie = button.parentElement;
-        const title = movie.querySelector("h2")
+        const product = button.parentElement;
+        const title = product.querySelector("h2");
 
-        console.log("Playing: " + title.textContent);
-    })
-})
+        console.log(title.textContent);
+
+    });
+
+});
 
