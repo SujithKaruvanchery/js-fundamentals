@@ -565,11 +565,18 @@
 
 // title1.textContent = "Hello Sujith"
 
-const image = document.querySelector("#profile");
-const button = document.querySelector("#change");
+// const image = document.querySelector("#profile");
+// const button = document.querySelector("#change");
 
-button.addEventListener("click", function () {
-    image.setAttribute("src", "https://i.pinimg.com/474x/85/b1/32/85b132280423fc8beadc3a29c9d42f8c.jpg?nii=t");
-    image.setAttribute("alt", "New Profile");
-});
+// button.addEventListener("click", function () {
+//     image.setAttribute("src", "https://i.pinimg.com/474x/85/b1/32/85b132280423fc8beadc3a29c9d42f8c.jpg?nii=t");
+//     image.setAttribute("alt", "New Profile");
+// });
 
+const button = document.querySelector("#btn");
+
+// button.classList.add("active");
+
+// button.classList.remove("active");
+
+button.classList.toggle("active");
