@@ -538,18 +538,38 @@
 //     })
 // })
 
-const buttons = document.querySelectorAll(".buy");
+// const buttons = document.querySelectorAll(".buy");
 
-buttons.forEach(function (button) {
+// buttons.forEach(function (button) {
 
-    button.addEventListener("click", function () {
+//     button.addEventListener("click", function () {
 
-        const product = button.parentElement;
-        const title = product.querySelector("h2");
+//         const product = button.parentElement;
+//         const title = product.querySelector("h2");
 
-        console.log(title.textContent);
+//         console.log(title.textContent);
 
-    });
+//     });
 
+// });
+
+// const box = document.querySelector("#box");
+
+// box.innerHTML = "<h1>Hello Sujith</h1>"
+
+// const title = document.querySelector("#title");
+
+// title.innerText = "Hello Sujith";
+
+// const title1 =  document.querySelector(".title")
+
+// title1.textContent = "Hello Sujith"
+
+const image = document.querySelector("#profile");
+const button = document.querySelector("#change");
+
+button.addEventListener("click", function () {
+    image.setAttribute("src", "https://i.pinimg.com/474x/85/b1/32/85b132280423fc8beadc3a29c9d42f8c.jpg?nii=t");
+    image.setAttribute("alt", "New Profile");
 });
 
