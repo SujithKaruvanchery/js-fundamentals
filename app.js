@@ -485,15 +485,27 @@
 // button.textContent = "Text Change"
 // console.log(button);
 
-const title = document.querySelector("#title");
-const button = document.querySelector("#btn");
+// const title = document.querySelector("#title");
+// const button = document.querySelector("#btn");
 
 // button.addEventListener("click", function () {
 //     title.textContent = "Button Clicked"
 // })
 
-function changeTitle(params) {
-    title.textContent = "Button Clicked"
+// function changeTitle(params) {
+//     title.textContent = "Button Clicked"
+// }
+
+// button.addEventListener("click", changeTitle)
+
+const count = document.querySelector("#count")
+const button = document.querySelector("#increase")
+
+let number = 0;
+
+function increaseCount() {
+    number++;
+    count.textContent = number;
 }
 
-button.addEventListener("click", changeTitle)
+button.addEventListener("click", increaseCount)
