@@ -499,7 +499,8 @@
 // button.addEventListener("click", changeTitle)
 
 const count = document.querySelector("#count")
-const button = document.querySelector("#increase")
+const increaseButton = document.querySelector("#increase")
+const decreaseButton = document.querySelector("#decrease")
 
 let number = 0;
 
@@ -508,4 +509,10 @@ function increaseCount() {
     count.textContent = number;
 }
 
-button.addEventListener("click", increaseCount)
+function decreaseCount() {
+    number--;
+    count.textContent = number;
+}
+
+increaseButton.addEventListener("click", increaseCount)
+decreaseButton.addEventListener("click", decreaseCount)
