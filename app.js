@@ -498,21 +498,30 @@
 
 // button.addEventListener("click", changeTitle)
 
-const count = document.querySelector("#count")
-const increaseButton = document.querySelector("#increase")
-const decreaseButton = document.querySelector("#decrease")
+// const count = document.querySelector("#count")
+// const increaseButton = document.querySelector("#increase")
+// const decreaseButton = document.querySelector("#decrease")
 
-let number = 0;
+// let number = 0;
 
-function increaseCount() {
-    number++;
-    count.textContent = number;
-}
+// function increaseCount() {
+//     number++;
+//     count.textContent = number;
+// }
 
-function decreaseCount() {
-    number--;
-    count.textContent = number;
-}
+// function decreaseCount() {
+//     number--;
+//     count.textContent = number;
+// }
 
-increaseButton.addEventListener("click", increaseCount)
-decreaseButton.addEventListener("click", decreaseCount)
+// increaseButton.addEventListener("click", increaseCount)
+// decreaseButton.addEventListener("click", decreaseCount)
+
+const buttons = document.querySelectorAll(".buy");
+
+buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        console.log("Product added to cart");
+
+    })
+})
