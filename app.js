@@ -473,14 +473,27 @@
 
 // console.log(element);
 
-const title = document.querySelector("#title")
-title.textContent = "I Love DOM"
-console.log(title)
+// const title = document.querySelector("#title")
+// title.textContent = "I Love DOM"
+// console.log(title)
 
-const message = document.querySelector(".message")
-message.textContent = "DOM is Easy"
-console.log(message);
+// const message = document.querySelector(".message")
+// message.textContent = "DOM is Easy"
+// console.log(message);
 
-const button = document.querySelector("#button")
-button.textContent = "Text Change"
-console.log(button);
+// const button = document.querySelector("#button")
+// button.textContent = "Text Change"
+// console.log(button);
+
+const title = document.querySelector("#title");
+const button = document.querySelector("#btn");
+
+// button.addEventListener("click", function () {
+//     title.textContent = "Button Clicked"
+// })
+
+function changeTitle(params) {
+    title.textContent = "Button Clicked"
+}
+
+button.addEventListener("click", changeTitle)
