@@ -517,11 +517,24 @@
 // increaseButton.addEventListener("click", increaseCount)
 // decreaseButton.addEventListener("click", decreaseCount)
 
-const buttons = document.querySelectorAll(".buy");
+// const buttons = document.querySelectorAll(".buy");
+
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", function () {
+//         console.log("Product added to cart");
+
+//     })
+// })
+
+const buttons = document.querySelectorAll(".watch");
 
 buttons.forEach(function (button) {
     button.addEventListener("click", function () {
-        console.log("Product added to cart");
 
+        const movie = button.parentElement;
+        const title = movie.querySelector("h2")
+
+        console.log("Playing: " + title.textContent);
     })
 })
+
