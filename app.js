@@ -573,10 +573,14 @@
 //     image.setAttribute("alt", "New Profile");
 // });
 
-const button = document.querySelector("#btn");
+// const button = document.querySelector("#btn");
 
 // button.classList.add("active");
 
 // button.classList.remove("active");
 
-button.classList.toggle("active");
+const button = document.querySelector("#darkMode");
+
+button.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+});
