@@ -389,73 +389,98 @@
 
 // start()
 
-function task1() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Task 1 completed")
-        }, 1500);
-    })
-}
+// function task1() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Task 1 completed")
+//         }, 1500);
+//     })
+// }
 
-function task2() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Task 2 completed")
-        }, 2000);
-    })
-}
+// function task2() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Task 2 completed")
+//         }, 2000);
+//     })
+// }
 
-function task3() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Task 3 completed")
-        }, 2500);
-    })
-}
+// function task3() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Task 3 completed")
+//         }, 2500);
+//     })
+// }
 
-Promise.all([
-    task1(),
-    task2(),
-    task3()
-])
+// Promise.all([
+//     task1(),
+//     task2(),
+//     task3()
+// ])
 
-    .then((result) => {
-        console.log(result);
-    }).catch((err) => {
-        console.error("Error:", err);
+//     .then((result) => {
+//         console.log(result);
+//     }).catch((err) => {
+//         console.error("Error:", err);
 
-    });
+//     });
 
-function getRestaurant() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Restaurant found")
-        }, 1500);
-    })
-}
+// function getRestaurant() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Restaurant found")
+//         }, 1500);
+//     })
+// }
 
-function getMenu() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Menu loaded")
-        }, 2000);
-    })
-}
+// function getMenu() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Menu loaded")
+//         }, 2000);
+//     })
+// }
 
-function getDeliveryParter() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Delivery partner found")
-        }, 2500);
-    })
-}
+// function getDeliveryParter() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Delivery partner found")
+//         }, 2500);
+//     })
+// }
 
-Promise.all([
-    getRestaurant(),
-    getMenu(),
-    getDeliveryParter()
-]).then((result) => {
-    console.log(result);
-}).catch((err) => {
-    console.error("Error:", err);
-});
+// Promise.all([
+//     getRestaurant(),
+//     getMenu(),
+//     getDeliveryParter()
+// ]).then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.error("Error:", err);
+// });
+
+// const heading = document.getElementById("heading")
+
+// heading.textContent = "Hello Sujith"
+
+// console.log(heading);
+
+
+// const element = document.getElementById("element")
+
+// element.textContent = "Learning Javascript"
+
+// console.log(element);
+
+const title = document.querySelector("#title")
+title.textContent = "I Love DOM"
+console.log(title)
+
+const message = document.querySelector(".message")
+message.textContent = "DOM is Easy"
+console.log(message);
+
+const button = document.querySelector("#button")
+button.textContent = "Text Change"
+console.log(button);
