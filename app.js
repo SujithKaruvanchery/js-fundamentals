@@ -638,16 +638,34 @@
 
 // container.append(mySkills, languages1, languages2, languages3)
 
-const container = document.querySelector("#container");
+// const container = document.querySelector("#container");
 
-const heading = document.createElement("h2");
-heading.textContent = "My Skills";
+// const heading = document.createElement("h2");
+// heading.textContent = "My Skills";
 
-container.prepend(heading);
+// container.prepend(heading);
 
-const list = document.querySelector("#list");
+// const list = document.querySelector("#list");
 
-const mySkills = document.createElement("h2");
-mySkills.textContent = "My Skills";
+// const mySkills = document.createElement("h2");
+// mySkills.textContent = "My Skills";
 
-list.prepend(mySkills);
+// list.prepend(mySkills);
+
+const message = document.querySelector("#message");
+
+message.remove()
+
+const item = document.querySelector("#item");
+const deleteButton = document.querySelector("#delete");
+
+deleteButton.addEventListener("click", function () {
+    item.remove();
+});
+
+const title = document.querySelector("#title");
+const removeTitle = document.querySelector("#remove");
+
+removeTitle.addEventListener("click", function () {
+    title.remove()
+})
