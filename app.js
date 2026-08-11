@@ -652,20 +652,36 @@
 
 // list.prepend(mySkills);
 
-const message = document.querySelector("#message");
+// const message = document.querySelector("#message");
 
-message.remove()
+// message.remove()
 
-const item = document.querySelector("#item");
-const deleteButton = document.querySelector("#delete");
+// const item = document.querySelector("#item");
+// const deleteButton = document.querySelector("#delete");
 
-deleteButton.addEventListener("click", function () {
-    item.remove();
-});
+// deleteButton.addEventListener("click", function () {
+//     item.remove();
+// });
 
-const title = document.querySelector("#title");
-const removeTitle = document.querySelector("#remove");
+// const title = document.querySelector("#title");
+// const removeTitle = document.querySelector("#remove");
 
-removeTitle.addEventListener("click", function () {
-    title.remove()
-})
+// removeTitle.addEventListener("click", function () {
+//     title.remove()
+// })
+
+// const container = document.querySelector("#container");
+
+// const paragraph = document.createElement("p");
+
+// paragraph.textContent = "Hello Sujith";
+
+// container.appendChild(paragraph);
+
+const container = document.querySelector("#container");
+
+const heading = document.createElement("h2");
+
+heading.textContent = "My Skills";
+
+container.appendChild(heading)
