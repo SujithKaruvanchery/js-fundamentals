@@ -715,16 +715,50 @@
 
 // });
 
-const course = document.querySelector("#course");
-const output = document.querySelector("#output");
+// const course = document.querySelector("#course");
+// const output = document.querySelector("#output");
 
-course.addEventListener("change", function () {
-    output.textContent = course.value;
-});
+// course.addEventListener("change", function () {
+//     output.textContent = course.value;
+// });
 
-const fruit = document.querySelector("#fruit");
-const output = document.querySelector("#output");
+// const fruit = document.querySelector("#fruit");
+// const output = document.querySelector("#output");
 
-fruit.addEventListener("change", function () {
-    output.textContent = fruit.value;
+// fruit.addEventListener("change", function () {
+//     output.textContent = fruit.value;
+// });
+
+// const form = document.querySelector("#form");
+
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     console.log("Form submitted");
+// });
+
+// const form = document.querySelector("#loginForm");
+
+// form.addEventListener("submit", function () {
+//     console.log("Login clicked");
+// });
+
+// const form = document.querySelector("#loginForm");
+
+// form.addEventListener("submit", function (event) {
+
+//     event.preventDefault();
+
+//     console.log("Login clicked");
+// });
+
+const form = document.querySelector("#loginForm");
+const username = document.querySelector("#username");
+const message = document.querySelector("#message");
+
+form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    message.textContent = "Welcome " + username.value;
 });
