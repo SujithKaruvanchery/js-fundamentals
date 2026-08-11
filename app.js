@@ -752,13 +752,25 @@
 //     console.log("Login clicked");
 // });
 
-const form = document.querySelector("#loginForm");
-const username = document.querySelector("#username");
-const message = document.querySelector("#message");
+// const form = document.querySelector("#loginForm");
+// const username = document.querySelector("#username");
+// const message = document.querySelector("#message");
+
+// form.addEventListener("submit", function (event) {
+
+//     event.preventDefault();
+
+//     message.textContent = "Welcome " + username.value;
+// });
+
+const form = document.querySelector("#feedbackForm");
+const nameInput = document.querySelector("#name");
+const feedback = document.querySelector("#feedback");
+const result = document.querySelector("#result");
 
 form.addEventListener("submit", function (event) {
-
     event.preventDefault();
 
-    message.textContent = "Welcome " + username.value;
+    result.textContent =
+        "Thank you " + nameInput.value + " for your feedback!";
 });
