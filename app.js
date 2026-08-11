@@ -579,8 +579,32 @@
 
 // button.classList.remove("active");
 
-const button = document.querySelector("#darkMode");
+// const button = document.querySelector("#darkMode");
 
-button.addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-});
+// button.addEventListener("click", function () {
+//     document.body.classList.toggle("dark");
+// });
+
+// const button = document.querySelector("#btn");
+
+// button.addEventListener("click", function () {
+
+//     document.body.classList.toggle("red")
+
+// });
+
+const box = document.querySelector("#box");
+
+const paragraph = document.createElement("p");
+
+paragraph.textContent = "Hello Sujith";
+
+box.append(paragraph);
+
+const container = document.querySelector("#container");
+
+const heading = document.createElement("h2");
+
+heading.textContent = "Learning DOM";
+
+container.append(heading);
