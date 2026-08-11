@@ -609,31 +609,45 @@
 
 // container.append(heading);
 
-const list = document.querySelector("#list");
+// const list = document.querySelector("#list");
 
-const item1 = document.createElement("p");
-item1.textContent = "Apple";
+// const item1 = document.createElement("p");
+// item1.textContent = "Apple";
 
-const item2 = document.createElement("p");
-item2.textContent = "Banana";
+// const item2 = document.createElement("p");
+// item2.textContent = "Banana";
 
-const item3 = document.createElement("p");
-item3.textContent = "Orange";
+// const item3 = document.createElement("p");
+// item3.textContent = "Orange";
 
-list.append(item1, item2, item3);
+// list.append(item1, item2, item3);
+
+// const container = document.querySelector("#container");
+
+// const mySkills = document.createElement("h2");
+// mySkills.textContent = "My Skills"
+
+// const languages1 = document.createElement("p")
+// languages1.textContent = "HTML";
+
+// const languages2 = document.createElement("p");
+// languages2.textContent = "CSS";
+
+// const languages3 = document.createElement("p");
+// languages3.textContent = "JavaScript";
+
+// container.append(mySkills, languages1, languages2, languages3)
 
 const container = document.querySelector("#container");
 
+const heading = document.createElement("h2");
+heading.textContent = "My Skills";
+
+container.prepend(heading);
+
+const list = document.querySelector("#list");
+
 const mySkills = document.createElement("h2");
-mySkills.textContent = "My Skills"
+mySkills.textContent = "My Skills";
 
-const languages1 = document.createElement("p")
-languages1.textContent = "HTML";
-
-const languages2 = document.createElement("p");
-languages2.textContent = "CSS";
-
-const languages3 = document.createElement("p");
-languages3.textContent = "JavaScript";
-
-container.append(mySkills, languages1, languages2, languages3)
+list.prepend(mySkills);
