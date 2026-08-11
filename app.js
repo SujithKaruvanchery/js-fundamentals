@@ -686,22 +686,31 @@
 
 // container.appendChild(heading);
 
+// const nameInput = document.querySelector("#name");
+
+// nameInput.addEventListener("input", function () {
+//     console.log("User is typing");
+// });
+
+// const nameInput = document.querySelector("#name");
+
+// nameInput.addEventListener("input", function () {
+//     console.log(nameInput.value);
+// });
+
+// const nameInput = document.querySelector("#name");
+// const message = document.querySelector("#message");
+
+// nameInput.addEventListener("input", function () {
+//     message.textContent = nameInput.value;
+//     console.log(nameInput.value);
+// });
+
 const nameInput = document.querySelector("#name");
+const output = document.querySelector("#output");
 
 nameInput.addEventListener("input", function () {
-    console.log("User is typing");
-});
 
-const nameInput = document.querySelector("#name");
+    output.textContent = nameInput.value;
 
-nameInput.addEventListener("input", function () {
-    console.log(nameInput.value);
-});
-
-const nameInput = document.querySelector("#name");
-const message = document.querySelector("#message");
-
-nameInput.addEventListener("input", function () {
-    message.textContent = nameInput.value;
-    console.log(nameInput.value);
 });
