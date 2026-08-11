@@ -706,11 +706,25 @@
 //     console.log(nameInput.value);
 // });
 
-const nameInput = document.querySelector("#name");
+// const nameInput = document.querySelector("#name");
+// const output = document.querySelector("#output");
+
+// nameInput.addEventListener("input", function () {
+
+//     output.textContent = nameInput.value;
+
+// });
+
+const course = document.querySelector("#course");
 const output = document.querySelector("#output");
 
-nameInput.addEventListener("input", function () {
+course.addEventListener("change", function () {
+    output.textContent = course.value;
+});
 
-    output.textContent = nameInput.value;
+const fruit = document.querySelector("#fruit");
+const output = document.querySelector("#output");
 
+fruit.addEventListener("change", function () {
+    output.textContent = fruit.value;
 });
