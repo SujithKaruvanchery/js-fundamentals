@@ -678,10 +678,30 @@
 
 // container.appendChild(paragraph);
 
-const container = document.querySelector("#container");
+// const container = document.querySelector("#container");
 
-const heading = document.createElement("h2");
+// const heading = document.createElement("h2");
 
-heading.textContent = "My Skills";
+// heading.textContent = "My Skills";
 
-container.appendChild(heading)
+// container.appendChild(heading);
+
+const nameInput = document.querySelector("#name");
+
+nameInput.addEventListener("input", function () {
+    console.log("User is typing");
+});
+
+const nameInput = document.querySelector("#name");
+
+nameInput.addEventListener("input", function () {
+    console.log(nameInput.value);
+});
+
+const nameInput = document.querySelector("#name");
+const message = document.querySelector("#message");
+
+nameInput.addEventListener("input", function () {
+    message.textContent = nameInput.value;
+    console.log(nameInput.value);
+});
