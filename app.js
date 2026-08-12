@@ -813,12 +813,33 @@
 //     output.textContent = event.target.value;
 // })
 
-const buttons = document.querySelectorAll(".buy");
-const message = document.querySelector("#message");
+// const buttons = document.querySelectorAll(".buy");
+// const message = document.querySelector("#message");
 
-buttons.forEach(function (button) {
-    button.addEventListener("click", function (event) {
-        message.textContent = event.target.textContent;
-    })
-})
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", function (event) {
+//         message.textContent = event.target.textContent;
+//     })
+// })
 
+const parent = document.querySelector("#parent");
+const child = document.querySelector("#child");
+
+child.addEventListener("click", function () {
+    console.log("Button clicked");
+});
+
+parent.addEventListener("click", function () {
+    console.log("Parent clicked");
+});
+
+const product = document.querySelector("#product");
+const buyButton = document.querySelector("#buy");
+
+buyButton.addEventListener("click", function () {
+    console.log("Laptop added to cart");
+});
+
+product.addEventListener("click", function () {
+    console.log("Product clicked");
+});
