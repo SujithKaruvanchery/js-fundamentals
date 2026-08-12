@@ -798,9 +798,17 @@
 
 // })
 
+// const name = document.querySelector("#name");
+// const output = document.querySelector("#output");
+
+// document.addEventListener("input", function (event) {
+//     output.textContent = (event.target.value);
+// })
+
 const name = document.querySelector("#name");
+const email = document.querySelector("#email");
 const output = document.querySelector("#output");
 
 document.addEventListener("input", function (event) {
-    output.textContent = (event.target.value);
+    output.textContent = event.target.value;
 })
