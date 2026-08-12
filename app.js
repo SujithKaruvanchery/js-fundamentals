@@ -763,14 +763,30 @@
 //     message.textContent = "Welcome " + username.value;
 // });
 
-const form = document.querySelector("#feedbackForm");
-const nameInput = document.querySelector("#name");
-const feedback = document.querySelector("#feedback");
+// const form = document.querySelector("#feedbackForm");
+// const nameInput = document.querySelector("#name");
+// const feedback = document.querySelector("#feedback");
+// const result = document.querySelector("#result");
+
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     result.textContent =
+//         "Thank you " + nameInput.value + " for your feedback!";
+// });
+
+document.addEventListener("keydown", function (event) {
+    console.log("You pressed: " + event.key);
+});
+
 const result = document.querySelector("#result");
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener("keydown", function (event) {
+    result.textContent = "You pressed: " + event.key;
+})
 
-    result.textContent =
-        "Thank you " + nameInput.value + " for your feedback!";
+const result = document.querySelector("#result");
+
+document.addEventListener("keyup", function (event) {
+    result.textContent = "You released: " + event.key;
 });
