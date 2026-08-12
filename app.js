@@ -844,15 +844,57 @@
 //     console.log("Product clicked");
 // });
 
-const product = document.querySelector("#product");
-const buyButton = document.querySelector("#buy");
+// const product = document.querySelector("#product");
+// const buyButton = document.querySelector("#buy");
 
-buyButton.addEventListener("click", function (event) {
-    event.stopPropagation();
-    console.log("Laptop added to cart");
+// buyButton.addEventListener("click", function (event) {
+//     event.stopPropagation();
+//     console.log("Laptop added to cart");
+// });
+
+// product.addEventListener("click", function () {
+//     console.log("Product clicked");
+// });
+
+// const product = document.querySelector("#product");
+// const buyButton = document.querySelector("#buy");
+
+// product.addEventListener("click", function () {
+//     console.log("Product");
+// }, true);
+
+// buyButton.addEventListener("click", function () {
+//     console.log("Add to Cart");
+// });
+
+// const buttons = document.querySelectorAll(".buy");
+
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", function () {
+//         console.log("Added to cart");
+//     });
+// });
+
+const products = document.querySelector("#products");
+
+products.addEventListener("click", function (event) {
+
+    if (event.target.classList.contains("buy")) {
+        console.log("Added to cart");
+    }
+
 });
 
-product.addEventListener("click", function () {
-    console.log("Product clicked");
-});
+const products = document.querySelector("#products");
 
+products.addEventListener("click", function (event) {
+
+    if (event.target.classList.contains("buy")) {
+
+        const product = event.target.parentElement;
+        const title = product.querySelector("h2");
+
+        console.log(title.textContent + " added to cart");
+    }
+
+});
