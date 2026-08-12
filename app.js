@@ -875,26 +875,42 @@
 //     });
 // });
 
-const products = document.querySelector("#products");
+// const products = document.querySelector("#products");
 
-products.addEventListener("click", function (event) {
+// products.addEventListener("click", function (event) {
 
-    if (event.target.classList.contains("buy")) {
-        console.log("Added to cart");
-    }
+//     if (event.target.classList.contains("buy")) {
+//         console.log("Added to cart");
+//     }
 
-});
+// });
 
-const products = document.querySelector("#products");
+// const products = document.querySelector("#products");
 
-products.addEventListener("click", function (event) {
+// products.addEventListener("click", function (event) {
 
-    if (event.target.classList.contains("buy")) {
+//     if (event.target.classList.contains("buy")) {
 
-        const product = event.target.parentElement;
-        const title = product.querySelector("h2");
+//         const product = event.target.parentElement;
+//         const title = product.querySelector("h2");
 
-        console.log(title.textContent + " added to cart");
-    }
+//         console.log(title.textContent + " added to cart");
+//     }
 
-});
+// });
+
+// const button = document.querySelector("#btn");
+
+// button.addEventListener("click", function () {
+//     this.textContent = "Clicked!";
+// });
+
+const buttons = document.querySelectorAll(".btn")
+
+buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        this.textContent = "Clicked";
+        console.log(this.textContent = "Clicked");
+
+    })
+})
