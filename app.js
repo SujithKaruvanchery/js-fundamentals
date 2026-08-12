@@ -805,10 +805,20 @@
 //     output.textContent = (event.target.value);
 // })
 
-const name = document.querySelector("#name");
-const email = document.querySelector("#email");
-const output = document.querySelector("#output");
+// const name = document.querySelector("#name");
+// const email = document.querySelector("#email");
+// const output = document.querySelector("#output");
 
-document.addEventListener("input", function (event) {
-    output.textContent = event.target.value;
+// document.addEventListener("input", function (event) {
+//     output.textContent = event.target.value;
+// })
+
+const buttons = document.querySelectorAll(".buy");
+const message = document.querySelector("#message");
+
+buttons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+        message.textContent = event.target.textContent;
+    })
 })
+
