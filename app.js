@@ -822,24 +822,37 @@
 //     })
 // })
 
-const parent = document.querySelector("#parent");
-const child = document.querySelector("#child");
+// const parent = document.querySelector("#parent");
+// const child = document.querySelector("#child");
 
-child.addEventListener("click", function () {
-    console.log("Button clicked");
-});
+// child.addEventListener("click", function () {
+//     console.log("Button clicked");
+// });
 
-parent.addEventListener("click", function () {
-    console.log("Parent clicked");
-});
+// parent.addEventListener("click", function () {
+//     console.log("Parent clicked");
+// });
+
+// const product = document.querySelector("#product");
+// const buyButton = document.querySelector("#buy");
+
+// buyButton.addEventListener("click", function () {
+//     console.log("Laptop added to cart");
+// });
+
+// product.addEventListener("click", function () {
+//     console.log("Product clicked");
+// });
 
 const product = document.querySelector("#product");
 const buyButton = document.querySelector("#buy");
 
-buyButton.addEventListener("click", function () {
+buyButton.addEventListener("click", function (event) {
+    event.stopPropagation();
     console.log("Laptop added to cart");
 });
 
 product.addEventListener("click", function () {
     console.log("Product clicked");
 });
+
