@@ -775,18 +775,32 @@
 //         "Thank you " + nameInput.value + " for your feedback!";
 // });
 
-document.addEventListener("keydown", function (event) {
-    console.log("You pressed: " + event.key);
-});
+// document.addEventListener("keydown", function (event) {
+//     console.log("You pressed: " + event.key);
+// });
 
-const result = document.querySelector("#result");
+// const result = document.querySelector("#result");
 
-document.addEventListener("keydown", function (event) {
-    result.textContent = "You pressed: " + event.key;
+// document.addEventListener("keydown", function (event) {
+//     result.textContent = "You pressed: " + event.key;
+// })
+
+// const result = document.querySelector("#result");
+
+// document.addEventListener("keyup", function (event) {
+//     result.textContent = "You released: " + event.key;
+// });
+
+// const input = document.querySelector("#input");
+
+// document.addEventListener("input", function (event) {
+//     console.log(event.target.value);
+
+// })
+
+const name = document.querySelector("#name");
+const output = document.querySelector("#output");
+
+document.addEventListener("input", function (event) {
+    output.textContent = (event.target.value);
 })
-
-const result = document.querySelector("#result");
-
-document.addEventListener("keyup", function (event) {
-    result.textContent = "You released: " + event.key;
-});
