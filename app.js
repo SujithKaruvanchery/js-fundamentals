@@ -922,3 +922,21 @@
 const profile = document.querySelector("#profile");
 
 console.log(profile.firstElementChild);
+
+console.log(profile.firstElementChild.textContent);
+
+console.log(profile.lastElementChild);
+
+profile.lastElementChild.textContent = "Contact Me";
+
+console.log(profile.lastElementChild.textContent);
+
+const title = document.querySelector("h2");
+
+console.log(title.nextElementSibling);
+
+console.log(title.nextElementSibling.textContent);
+
+const paragraph = document.querySelector("h2");
+
+paragraph.nextElementSibling.textContent = "Full Stack Developer"
