@@ -915,6 +915,10 @@
 //     })
 // })
 
-const product = document.querySelector("#product");
+// const product = document.querySelector("#product");
 
-console.log(product.children[0]);
+// console.log(product.children[0]);
+
+const profile = document.querySelector("#profile");
+
+console.log(profile.firstElementChild);
