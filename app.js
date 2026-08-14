@@ -905,12 +905,16 @@
 //     this.textContent = "Clicked!";
 // });
 
-const buttons = document.querySelectorAll(".btn")
+// const buttons = document.querySelectorAll(".btn")
 
-buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-        this.textContent = "Clicked";
-        console.log(this.textContent = "Clicked");
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", function () {
+//         this.textContent = "Clicked";
+//         console.log(this.textContent = "Clicked");
 
-    })
-})
+//     })
+// })
+
+const product = document.querySelector("#product");
+
+console.log(product.children[0]);
