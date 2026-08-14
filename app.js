@@ -941,11 +941,19 @@
 
 // paragraph.nextElementSibling.textContent = "Full Stack Developer";
 
-const paragraph = document.querySelector("p");
+// const paragraph = document.querySelector("p");
 
-console.log(paragraph.previousElementSibling);
+// console.log(paragraph.previousElementSibling);
 
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-console.log(button.previousElementSibling.textContent);
+// console.log(button.previousElementSibling.textContent);
 
+const box = document.querySelector("#box");
+const button = document.querySelector("#btn");
+
+button.addEventListener("click", function () {
+    box.style.color = "white";
+    box.style.backgroundColor = "black";
+    box.style.fontSize = "25px";
+});
