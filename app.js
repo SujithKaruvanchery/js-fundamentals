@@ -919,24 +919,33 @@
 
 // console.log(product.children[0]);
 
-const profile = document.querySelector("#profile");
+// const profile = document.querySelector("#profile");
 
-console.log(profile.firstElementChild);
+// console.log(profile.firstElementChild);
 
-console.log(profile.firstElementChild.textContent);
+// console.log(profile.firstElementChild.textContent);
 
-console.log(profile.lastElementChild);
+// console.log(profile.lastElementChild);
 
-profile.lastElementChild.textContent = "Contact Me";
+// profile.lastElementChild.textContent = "Contact Me";
 
-console.log(profile.lastElementChild.textContent);
+// console.log(profile.lastElementChild.textContent);
 
-const title = document.querySelector("h2");
+// const title = document.querySelector("h2");
 
-console.log(title.nextElementSibling);
+// console.log(title.nextElementSibling);
 
-console.log(title.nextElementSibling.textContent);
+// console.log(title.nextElementSibling.textContent);
 
-const paragraph = document.querySelector("h2");
+// const paragraph = document.querySelector("h2");
 
-paragraph.nextElementSibling.textContent = "Full Stack Developer"
+// paragraph.nextElementSibling.textContent = "Full Stack Developer";
+
+const paragraph = document.querySelector("p");
+
+console.log(paragraph.previousElementSibling);
+
+const button = document.querySelector("button");
+
+console.log(button.previousElementSibling.textContent);
+
