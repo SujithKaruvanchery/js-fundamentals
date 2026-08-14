@@ -949,11 +949,23 @@
 
 // console.log(button.previousElementSibling.textContent);
 
-const box = document.querySelector("#box");
+// const box = document.querySelector("#box");
+// const button = document.querySelector("#btn");
+
+// button.addEventListener("click", function () {
+//     box.style.color = "white";
+//     box.style.backgroundColor = "black";
+//     box.style.fontSize = "25px";
+// });
+
+const button = document.querySelector("#btn");
+
+button.onclick = function () {
+    console.log("Button clicked");
+};
+
 const button = document.querySelector("#btn");
 
 button.addEventListener("click", function () {
-    box.style.color = "white";
-    box.style.backgroundColor = "black";
-    box.style.fontSize = "25px";
+    console.log("Button clicked");
 });
